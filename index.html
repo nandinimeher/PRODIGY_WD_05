@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Modern Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SkyCast</h1>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <button id="geo-btn" class="location-btn">Use Current Location</button>
+
+        <p id="error" class="error-msg"></p>
+
+        <div id="weather-display" class="weather-info">
+            <div class="city" id="location-name">London, GB</div>
+            <div class="temp" id="temperature">24°C</div>
+            <div class="description" id="weather-desc">Clear Sky</div>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <span>Humidity</span>
+                    <p id="humidity">60%</p>
+                </div>
+                <div class="detail-card">
+                    <span>Wind Speed</span>
+                    <p id="wind-speed">5.2 m/s</p>
+                </div>
+                <div class="detail-card">
+                    <span>Feels Like</span>
+                    <p id="feels-like">26°C</p>
+                </div>
+                <div class="detail-card">
+                    <span>Pressure</span>
+                    <p id="pressure">1012 hPa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
